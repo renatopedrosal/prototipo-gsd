@@ -1,15 +1,15 @@
-<form action="">
-  <div class="example-container">
+<div class="container">
+  <form action="">
+    <h3 class="form-titulo">Gestão de despesas</h3>
+
     <mat-form-field appearance="outline">
-      <mat-label>Enter your email</mat-label>
-      <input matInput placeholder="pat@example.com" required />
+      <mat-label>Digite seu e-mail</mat-label>
+      <input matInput placeholder="email@dominio.com" required />
       <mat-error *ngIf="email.invalid">{{ getErrorMessage() }}</mat-error>
     </mat-form-field>
-  </div>
 
-  <div class="example-container">
     <mat-form-field appearance="outline">
-      <mat-label>Enter your password</mat-label>
+      <mat-label>Digite sua senha</mat-label>
       <input matInput [type]="hide ? 'password' : 'text'" />
       <button
         mat-icon-button
@@ -21,10 +21,10 @@
         <mat-icon>{{ hide ? "visibility_off" : "visibility" }}</mat-icon>
       </button>
     </mat-form-field>
-  </div>
 
-  <div class="example-button-row">
-    <button mat-flat-button color="primary">Primary</button>
-    <!-- <a mat-flat-button href="https://www.google.com/" target="_blank">Link</a> -->
-  </div>
-</form>
+    <div class="example-button-row">
+      <button mat-flat-button color="primary">Entrar</button>
+      <!-- <a mat-flat-button href="https://www.google.com/" target="_blank">Link</a> -->
+    </div>
+  </form>
+</div>
