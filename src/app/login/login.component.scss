@@ -1,22 +1,23 @@
-.container {
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+.container-form {
   max-width: 480px;
   padding: 30px;
   margin: 0 auto;
 }
 
 form {
-  // background-image: url("./img/download.png");
-  // background-repeat: no-repeat;
-  // background-position: center;
-  // background-size: 100%;
-  background-color: white;
+  height: 18rem;
+  width: 25rem;
+  background-color: #fff;
+  border-color: transparent;
   padding: 16px;
-  border-radius: 4px;
-  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+  border-radius: 1rem;
+  box-shadow: 6px 10px 15px 2px rgba(0, 0, 0, 0.1);
 }
 
 .form-titulo {
-  text-transform: capitalize;
+  font-family: "Montserrat", sans-serif;
   text-align: center;
 }
 

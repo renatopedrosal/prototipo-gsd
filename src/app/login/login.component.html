@@ -1,16 +1,21 @@
-<div class="container">
+<section class="container-form">
   <form action="">
-    <h3 class="form-titulo">Gestão de despesas</h3>
+    <h3 class="form-titulo">GSD - Gestão de Sistema de Despesas</h3>
 
     <mat-form-field appearance="outline">
-      <mat-label>Digite seu e-mail</mat-label>
-      <input matInput placeholder="email@dominio.com" required />
+      <mat-label>Login</mat-label>
+      <input matInput placeholder="Nome de usuário" required />
       <mat-error *ngIf="email.invalid">{{ getErrorMessage() }}</mat-error>
     </mat-form-field>
 
     <mat-form-field appearance="outline">
-      <mat-label>Digite sua senha</mat-label>
-      <input matInput [type]="hide ? 'password' : 'text'" />
+      <mat-label>Senha</mat-label>
+      <input
+        matInput
+        [type]="hide ? 'password' : 'text'"
+        placeholder="Senha"
+        required
+      />
       <button
         mat-icon-button
         matSuffix
@@ -27,4 +32,4 @@
       <!-- <a mat-flat-button href="https://www.google.com/" target="_blank">Link</a> -->
     </div>
   </form>
-</div>
+</section>
