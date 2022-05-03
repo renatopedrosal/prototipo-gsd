@@ -12,9 +12,10 @@ import { AppRoutingModule } from './app-routing-module';
 import { AppComponent } from './app.component';
 import { IndexComponent } from './index/index.component';
 import { LoginComponent } from './login/login.component';
+import { CadastroPerfilComponent } from './cadastro/cadastro-perfil/cadastro-perfil.component';
 
 @NgModule({
-  declarations: [AppComponent, LoginComponent, IndexComponent],
+  declarations: [AppComponent, LoginComponent, IndexComponent, CadastroPerfilComponent],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
