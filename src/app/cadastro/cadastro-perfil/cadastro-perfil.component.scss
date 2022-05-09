@@ -8,11 +8,11 @@
   color: white;
   padding: 10px;
   border-radius: 7px;
-  margin-bottom: 15px;
+  margin: 15px;
 }
 
 .container-search {
-  border: 1px solid #3f51b5;
+  // border: 1px solid #3f51b5;
   border-radius: 7px;
   padding: 10px;
 }
@@ -37,11 +37,9 @@ button {
   margin-top: -15px;
 }
 
-/*
+// Colocando fieldset
 
-Colocando fieldset
-
-.parent {
+#parent {
 display: grid;
 grid-template-columns: repeat(4, 1fr);
 grid-template-rows: repeat(10, 1fr);
@@ -49,8 +47,35 @@ grid-column-gap: 0px;
 grid-row-gap: 0px;
 }
 
-.div1 { grid-area: 1 / 1 / 5 / 5; }
+#div1 { grid-area: 1 / 1 / 5 / 5; }
 .div2 { grid-area: 5 / 1 / 11 / 3; }
 .div3 { grid-area: 5 / 3 / 11 / 5; }
 
-*/
+
+
+.lista {
+  border:1px solid #C0C0C0;
+  border-collapse:collapse;
+  padding:5px;
+  width: 100%;
+}
+.lista th {
+  border:1px solid #C0C0C0;
+  padding:5px;
+  background:#F0F0F0;
+}
+
+.lista th {
+  border:1px solid #C0C0C0;
+  padding:5px;
+  background:#F0F0F0;
+}
+
+.lista td {
+  border:1px solid #C0C0C0;
+  padding:5px;
+}
+
+th#descricao{
+  width: 80%;
+}

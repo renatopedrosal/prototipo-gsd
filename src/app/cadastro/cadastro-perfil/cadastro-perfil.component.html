@@ -1,9 +1,9 @@
-<article class="container">
-  <div class="container-header">
-    <span class="container-header-title">Perfil - Perfis</span>
-  </div>
+<div class="container-header">
+  <span class="container-header-title">Perfil</span>
+</div>
 
-  <div class="container-search">
+<div class="container" id="parent">
+  <div class="container-search" id="div1">
       <mat-tab-group animationDuration="0ms">
         <mat-tab label="Pesquisa">
           <mat-form-field class="example-full-width" appearance="outline">
@@ -33,12 +33,41 @@
       </mat-tab-group>
   </div>
 
-  <div>
+  <div class="div2">
     <fieldset>
       <legend>Listagem</legend>
-    </fieldset>
-    <fieldset>
-      <legend>Eventos</legend>
+      <table class="lista">
+        <thead>
+          <tr>
+            <th>Id. Perfil</th>
+            <th id="descricao">Descrição</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>&nbsp;</td>
+          </tr>
+          <tbody>
+      </table>
     </fieldset>
   </div>
-</article>
+
+  <div class="div3">
+    <fieldset>
+      <legend>Eventos</legend>
+      <table class="lista">
+        <thead>
+          <tr>
+            <th>Descrição</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>&nbsp;</td>
+          </tr>
+        </tbody>
+      </table>
+    </fieldset>
+  </div>
+
+</div>
