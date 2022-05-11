@@ -1,37 +1,37 @@
 <div class="container">
-  <h1>Perfis</h1>
-  <div class="parent">
-    <div class="div1">
-      <mat-tab-group animationDuration="0ms">
-        <mat-tab label="Pesquisa">
-          <mat-form-field class="example-full-width" appearance="fill">
-            <mat-label>Id. Perfil</mat-label>
-            <input matInput />
-          </mat-form-field>
-          <mat-form-field class="example-full-width" appearance="fill">
-            <mat-label>Descrição</mat-label>
-            <input matInput />
-          </mat-form-field>
-          <button mat-raised-button color="primary">
-            <mat-icon>search</mat-icon> Pesquisar
+    <h1>Perfis</h1>
+    <div class="parent">
+        <div class="div1">
+            <mat-tab-group animationDuration="0ms" backgroundColor="primary">
+                <mat-tab label="Pesquisa">
+                    <mat-form-field class="example-full-width" appearance="fill">
+                        <mat-label>Id. Perfil</mat-label>
+                        <input matInput />
+                    </mat-form-field>
+                    <mat-form-field class="example-full-width" appearance="fill">
+                        <mat-label>Descrição</mat-label>
+                        <input matInput />
+                    </mat-form-field>
+                    <button class="button-bottom" mat-raised-button color="primary">
+            <mat-icon mat-icon>search</mat-icon> Pesquisar
           </button>
-        </mat-tab>
-        <mat-tab label="Novo">
-          <mat-form-field class="example-full-width" appearance="fill">
-            <mat-label>Descrição</mat-label>
-            <input matInput />
-          </mat-form-field>
-          <button mat-raised-button color="primary">
+                </mat-tab>
+                <mat-tab label="Novo">
+                    <mat-form-field class="example-full-width" appearance="fill">
+                        <mat-label>Descrição</mat-label>
+                        <input matInput />
+                    </mat-form-field>
+                    <button class="button-bottom" mat-raised-button color="primary">
             <mat-icon>save</mat-icon> Pesquisar
           </button>
-        </mat-tab>
-      </mat-tab-group>
-    </div>
-    <div class="div2">
-      <fieldset>
-        <legend>Listagem</legend>
-        <app-cadastro-list-listagem></app-cadastro-list-listagem>
-        <!-- <table class="lista">
+                </mat-tab>
+            </mat-tab-group>
+        </div>
+        <div class="div2">
+            <fieldset>
+                <legend>Listagem</legend>
+                <app-cadastro-list-listagem></app-cadastro-list-listagem>
+                <!-- <table class="lista">
           <thead>
             <tr>
               <th>Id. Perfil</th>
@@ -45,24 +45,24 @@
           </tbody>
           <tbody></tbody>
         </table> -->
-      </fieldset>
+            </fieldset>
+        </div>
+        <div class="div3">
+            <fieldset>
+                <legend>Eventos</legend>
+                <table class="lista">
+                    <thead>
+                        <tr>
+                            <th>Descrição</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>&nbsp;</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </fieldset>
+        </div>
     </div>
-    <div class="div3">
-      <fieldset>
-        <legend>Eventos</legend>
-        <table class="lista">
-          <thead>
-            <tr>
-              <th>Descrição</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>&nbsp;</td>
-            </tr>
-          </tbody>
-        </table>
-      </fieldset>
-    </div>
-  </div>
 </div>

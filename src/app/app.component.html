@@ -2,32 +2,74 @@
   <div class="container-flex">
     <button mat-button [matMenuTriggerFor]="MenuHome">Home</button>
     <mat-menu #MenuHome="matMenu">
-      <button mat-menu-item routerLink="index"><mat-icon color="primary" class="mat-icon-style">home</mat-icon>Home</button>
+      <button mat-menu-item routerLink="index">
+        <mat-icon color="primary" class="mat-icon-style">home</mat-icon>Home
+      </button>
     </mat-menu>
     <button mat-button [matMenuTriggerFor]="MenuCadastro">Cadastro</button>
     <mat-menu #MenuCadastro="matMenu">
-      <button mat-menu-item routerLink="#"><mat-icon color="primary" class="mat-icon-style">person</mat-icon>Usuário</button>
-      <button mat-menu-item routerLink="#"><mat-icon color="primary" class="mat-icon-style">local_offer</mat-icon>Evento</button>
-      <button mat-menu-item routerLink="cadastro-perfil"><mat-icon color="primary" class="mat-icon-style">account_circle</mat-icon>Perfil</button>
-      <button mat-menu-item routerLink="#"><mat-icon color="primary" class="mat-icon-style">message</mat-icon>Perfil - Mensagens</button>
-      <button mat-menu-item routerLink="#"><mat-icon color="primary" class="mat-icon-style">person</mat-icon>Funcionário</button>
+      <button mat-menu-item routerLink="#">
+        <mat-icon color="primary" class="mat-icon-style">person</mat-icon
+        >Usuário
+      </button>
+      <button mat-menu-item routerLink="#">
+        <mat-icon color="primary" class="mat-icon-style">local_offer</mat-icon
+        >Evento
+      </button>
+      <button mat-menu-item routerLink="cadastro-perfil">
+        <mat-icon color="primary" class="mat-icon-style"
+          >account_circle</mat-icon
+        >Perfil
+      </button>
+      <button mat-menu-item routerLink="#">
+        <mat-icon color="primary" class="mat-icon-style">message</mat-icon
+        >Perfil - Mensagens
+      </button>
+      <button mat-menu-item routerLink="#">
+        <mat-icon color="primary" class="mat-icon-style">person</mat-icon
+        >Funcionário
+      </button>
     </mat-menu>
     <button mat-button [matMenuTriggerFor]="MenuManutencao">Manutenção</button>
     <mat-menu #MenuManutencao="matMenu">
-      <button mat-menu-item routerLink="#"><mat-icon color="primary" class="mat-icon-style">edit</mat-icon>Alterar Senha</button>
-      <button mat-menu-item routerLink="#"><mat-icon color="primary" class="mat-icon-style">table_chart</mat-icon>Tabela de Valores</button>
-      <button mat-menu-item routerLink="#"><mat-icon color="primary" class="mat-icon-style">calculate</mat-icon>Habilitar Cálculo</button>
-      <button mat-menu-item routerLink="#"><mat-icon color="primary" class="mat-icon-style">smartphone</mat-icon>Dispositivos Mobile</button>
+      <button mat-menu-item routerLink="#">
+        <mat-icon color="primary" class="mat-icon-style">edit</mat-icon>Alterar
+        Senha
+      </button>
+      <button mat-menu-item routerLink="#">
+        <mat-icon color="primary" class="mat-icon-style">table_chart</mat-icon
+        >Tabela de Valores
+      </button>
+      <button mat-menu-item routerLink="#">
+        <mat-icon color="primary" class="mat-icon-style">calculate</mat-icon
+        >Habilitar Cálculo
+      </button>
+      <button mat-menu-item routerLink="#">
+        <mat-icon color="primary" class="mat-icon-style">smartphone</mat-icon
+        >Dispositivos Mobile
+      </button>
     </mat-menu>
     <button mat-button [matMenuTriggerFor]="MenuMovimento">Movimento</button>
     <mat-menu #MenuMovimento="matMenu">
-      <button mat-menu-item routerLink="#"><mat-icon color="primary" class="mat-icon-style">table_rows</mat-icon>Lançamento</button>
-      <button mat-menu-item routerLink="#"><mat-icon color="primary" class="mat-icon-style">table_rows</mat-icon>Conferencia</button>
-      <button mat-menu-item routerLink="#"><mat-icon color="primary" class="mat-icon-style">delete</mat-icon>Excluir Despesas</button>
+      <button mat-menu-item routerLink="#">
+        <mat-icon color="primary" class="mat-icon-style">table_rows</mat-icon
+        >Lançamento
+      </button>
+      <button mat-menu-item routerLink="#">
+        <mat-icon color="primary" class="mat-icon-style">table_rows</mat-icon
+        >Conferencia
+      </button>
+      <button mat-menu-item routerLink="#">
+        <mat-icon color="primary" class="mat-icon-style">delete</mat-icon
+        >Excluir Despesas
+      </button>
     </mat-menu>
     <button mat-button [matMenuTriggerFor]="MenuRelatorios">Relatório</button>
     <mat-menu #MenuRelatorios="matMenu">
-      <button mat-menu-item routerLink="index"><mat-icon color="primary" class="mat-icon-style">content_paste</mat-icon>Relatórios</button>
+      <button mat-menu-item routerLink="index">
+        <mat-icon color="primary" class="mat-icon-style">content_paste</mat-icon
+        >Relatórios
+      </button>
     </mat-menu>
     <button mat-flat-button color="basic" routerLink="login">Sair</button>
   </div>

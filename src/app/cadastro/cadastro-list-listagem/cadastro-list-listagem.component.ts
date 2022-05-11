@@ -5,11 +5,8 @@ export interface PeriodicElement {
   idPerfil: number;
 }
 const ELEMENT_DATA: PeriodicElement[] = [
-  { idPerfil: 1, descricao: 'Hydrogen' },
-  { idPerfil: 2, descricao: 'Helium' },
-  { idPerfil: 3, descricao: 'Lithium' },
-  { idPerfil: 4, descricao: 'Beryllium' },
-  { idPerfil: 5, descricao: 'Boron' },
+  { idPerfil: 1, descricao: '' },
+  { idPerfil: 2, descricao: '' },
 ];
 
 @Component({

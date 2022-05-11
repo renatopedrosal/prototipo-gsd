@@ -18,7 +18,7 @@ import { IndexComponent } from './index/index.component';
 import { LoginComponent } from './login/login.component';
 
 @NgModule({
-  declarations: [AppComponent, LoginComponent, IndexComponent, CadastroPerfilComponent, CadastroListListagemComponent],
+  declarations: [AppComponent, LoginComponent, IndexComponent, CadastroPerfilComponent, CadastroListListagemComponent,],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
