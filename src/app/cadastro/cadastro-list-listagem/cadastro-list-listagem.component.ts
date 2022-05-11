@@ -5,8 +5,12 @@ export interface PeriodicElement {
   idPerfil: number;
 }
 const ELEMENT_DATA: PeriodicElement[] = [
-  { idPerfil: 1, descricao: '' },
-  { idPerfil: 2, descricao: '' },
+  { idPerfil: 1, descricao: 'Diretor' },
+  { idPerfil: 2, descricao: 'Gerentes' },
+  { idPerfil: 3, descricao: 'Editor(a)' },
+  { idPerfil: 4, descricao: 'Gerente Assistente' },
+  { idPerfil: 5, descricao: 'Editor(a) Associado(a)' },
+
 ];
 
 @Component({

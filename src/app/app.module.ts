@@ -16,9 +16,10 @@ import { CadastroListListagemComponent } from './cadastro/cadastro-list-listagem
 import { CadastroPerfilComponent } from './cadastro/cadastro-perfil/cadastro-perfil.component';
 import { IndexComponent } from './index/index.component';
 import { LoginComponent } from './login/login.component';
+import { CadastroListEventosComponent } from './cadastro/cadastro-list-eventos/cadastro-list-eventos.component';
 
 @NgModule({
-  declarations: [AppComponent, LoginComponent, IndexComponent, CadastroPerfilComponent, CadastroListListagemComponent,],
+  declarations: [AppComponent, LoginComponent, IndexComponent, CadastroPerfilComponent, CadastroListListagemComponent, CadastroListEventosComponent,],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
