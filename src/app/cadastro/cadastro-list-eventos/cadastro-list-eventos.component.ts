@@ -1,24 +1,7 @@
-import { Component } from '@angular/core';
-
-export interface Evento {
-  descricao: string
-}
-const ELEMENT_DATA: Evento[] = [
-  { descricao: 'Água' },
-  { descricao: 'Aluguel' },
-  { descricao: 'Auxílio Letra' },
-  { descricao: 'Auxílio Moradia' },
-  { descricao: 'Celular Corporativo' },
-  { descricao: 'Climatização' },
-  { descricao: 'Condomínio' },
-  { descricao: 'Despesa Extra com Alimentação' },
-  { descricao: 'Diárias' },
-  { descricao: 'Escolares' },
-  { descricao: 'Escolares Dependentes - Externato' },
-  { descricao: 'Escolares Dependentes - Internato' },
-  { descricao: 'Escolares Funcionários' },
-  { descricao: 'Celular Corporativo' },
-];
+import { Component, OnInit } from '@angular/core';
+import { EVENTOS } from '../../mock-eventos';
+import { Evento } from '../../models/eventos.model';
+import { EventoService } from '../../services/evento.service';
 
 @Component({
   selector: 'app-cadastro-list-eventos',
@@ -26,7 +9,18 @@ const ELEMENT_DATA: Evento[] = [
   styleUrls: ['./cadastro-list-eventos.component.scss']
 })
 
-export class CadastroListEventosComponent{
+export class CadastroListEventosComponent implements OnInit{
+  eventos?: Evento[] = [];
+
+  constructor(private eventoService: EventoService) {}
+
+  ngOnInit(): void {
+    // this.getEventos();
+  }
+
+  // getEventos(): void {
+  //   this.eventoService.getEventos().subscribe((evento) => (this.eventos = evento))
+  // }
   displayedColumns: string[] = ['descricao'];
-  dataSource = ELEMENT_DATA;
+  dataSource = EVENTOS;
 }
