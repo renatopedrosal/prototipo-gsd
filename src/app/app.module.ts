@@ -12,11 +12,11 @@ import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppRoutingModule } from './app-routing-module';
 import { AppComponent } from './app.component';
+import { CadastroListEventosComponent } from './cadastro/cadastro-list-eventos/cadastro-list-eventos.component';
 import { CadastroListListagemComponent } from './cadastro/cadastro-list-listagem/cadastro-list-listagem.component';
 import { CadastroPerfilComponent } from './cadastro/cadastro-perfil/cadastro-perfil.component';
 import { IndexComponent } from './index/index.component';
 import { LoginComponent } from './login/login.component';
-import { CadastroListEventosComponent } from './cadastro/cadastro-list-eventos/cadastro-list-eventos.component';
 
 @NgModule({
   declarations: [AppComponent, LoginComponent, IndexComponent, CadastroPerfilComponent, CadastroListListagemComponent, CadastroListEventosComponent,],
