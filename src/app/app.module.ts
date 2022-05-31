@@ -16,14 +16,16 @@ import { CadastroListEventosComponent } from './cadastro/cadastro-list-eventos/c
 import { CadastroListListagemComponent } from './cadastro/cadastro-list-listagem/cadastro-list-listagem.component';
 import { CadastroPerfilComponent } from './cadastro/cadastro-perfil/cadastro-perfil.component';
 import { IndexComponent } from './index/index.component';
-import { LoginComponent } from './login/login.component';
+import { AppRoutingTesteModule } from './navbar/app-routing-teste-module';
+import { NavbarComponent } from './navbar/navbar.component';
 
 @NgModule({
-  declarations: [AppComponent, LoginComponent, IndexComponent, CadastroPerfilComponent, CadastroListListagemComponent, CadastroListEventosComponent,],
+  declarations: [AppComponent, IndexComponent, CadastroPerfilComponent, CadastroListListagemComponent, CadastroListEventosComponent, NavbarComponent,],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
     AppRoutingModule,
+    AppRoutingTesteModule,
     MatMenuModule,
     MatToolbarModule,
     MatInputModule,

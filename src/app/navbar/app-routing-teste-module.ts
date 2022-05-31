@@ -1,7 +1,8 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { CadastroPerfilComponent } from './cadastro/cadastro-perfil/cadastro-perfil.component';
-import { IndexComponent } from './index/index.component';
+import { CadastroPerfilComponent } from '../cadastro/cadastro-perfil/cadastro-perfil.component';
+import { IndexComponent } from '../index/index.component';
+
 
 export const routes: Routes = [
   { path: '', redirectTo: 'index', pathMatch: 'full' },
@@ -13,6 +14,6 @@ export const routes: Routes = [
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingTesteModule { }
 
 // antes teste
