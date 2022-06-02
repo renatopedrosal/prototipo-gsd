@@ -1,5 +1,6 @@
 .container {
-  width: 980px;
+  max-width: 1200px;
+  // width: 980px;
   margin: 10px auto;
 }
 
@@ -49,29 +50,24 @@ h3 {
   text-indent: 14px;
 }
 
-.lista {
-  border: 1px solid #c0c0c0;
-  border-collapse: collapse;
-  padding: 5px;
+.example-spacer {
+  flex: 1 1 auto;
+}
+
+table {
   width: 100%;
 }
-.lista th {
-  border: 1px solid #c0c0c0;
-  padding: 5px;
-  background: #f0f0f0;
+
+th {
+  width: 80px;
 }
 
-.lista th {
-  border: 1px solid #c0c0c0;
-  padding: 5px;
-  background: #f0f0f0;
-}
+// .mat-form-field {
+//   font-size: 14px;
+//   width: 100%;
+// }
 
-.lista td {
-  border: 1px solid #c0c0c0;
-  padding: 5px;
-}
-
-th#descricao {
-  width: 80%;
-}
+// .container {
+//   max-width: 1200px;
+//   margin: 0 auto;
+// }
