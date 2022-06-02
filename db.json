@@ -1,9 +1,6 @@
 {
-  "posts": [
+  "listProfile": [
     {
-      "id": 1,
-      "title": "json-server",
-      "author": "typicode"
     }
   ],
   "comments": [
