@@ -3,6 +3,10 @@
     {
       "idPerfil": "1",
       "descricao": "Diretor"
+    },
+    {
+      "idPerfil": "2",
+      "descricao": "Gerente"
     }
   ],
   "comments": [

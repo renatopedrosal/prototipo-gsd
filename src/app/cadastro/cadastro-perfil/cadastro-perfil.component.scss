@@ -1,6 +1,6 @@
 .container {
-  max-width: 1200px;
-  // width: 980px;
+  // max-width: 1200px;
+  width: 980px;
   margin: 10px auto;
 }
 
@@ -18,31 +18,20 @@ mat-form-field {
   margin: 15px;
 }
 
-.button-bottom {
-  display: block;
-  margin-left: 15px;
-  margin-top: -15px;
-}
-
 // Colocando fieldset
 
 .parent {
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  grid-template-rows: repeat(6, 1fr);
-  grid-column-gap: 10px;
-  grid-row-gap: 20px;
-}
+  grid-template-columns: 49% 49%;
+  grid-template-rows: 30% 70%;
+  grid-template-areas: "div1 div1" "div2 div3" ;
+  grid-column-gap: 20px;
+  grid-row-gap: 0px;
+  }
 
-.div1 {
-  grid-area: 1 / 1 / 3 / 7;
-}
-.div2 {
-  grid-area: 3 / 1 / 7 / 4;
-}
-.div3 {
-  grid-area: 3 / 4 / 7 / 7;
-}
+.div1 { grid-area: div1; }
+.div2 { grid-area: div2; }
+.div3 { grid-area: div3; }
 
 h3 {
   font-size: 0.9em;
