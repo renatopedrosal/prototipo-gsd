@@ -4,6 +4,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatButtonModule } from '@angular/material/button';
 import { MatButtonToggleModule } from '@angular/material/button-toggle';
 import { MatNativeDateModule } from '@angular/material/core';
+import { MatDialogModule } from '@angular/material/dialog';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatIconModule } from '@angular/material/icon';
 import { MatInputModule } from '@angular/material/input';
@@ -19,14 +20,14 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppRoutingModule } from './app-routing-module';
 import { AppComponent } from './app.component';
 import { CadastroListEventosComponent } from './cadastro/cadastro-list-eventos/cadastro-list-eventos.component';
-import { CadastroListListagemComponent } from './cadastro/cadastro-list-listagem/cadastro-list-listagem.component';
 import { CadastroPerfilComponent } from './cadastro/cadastro-perfil/cadastro-perfil.component';
+import { DialogComponent } from './cadastro/dialog/dialog/dialog.component';
 import { IndexComponent } from './index/index.component';
 import { AppRoutingTesteModule } from './navbar/app-routing-teste-module';
 import { NavbarComponent } from './navbar/navbar.component';
 
 @NgModule({
-  declarations: [AppComponent, IndexComponent, CadastroPerfilComponent, CadastroListListagemComponent, CadastroListEventosComponent, NavbarComponent,],
+  declarations: [AppComponent, IndexComponent, CadastroPerfilComponent, CadastroListEventosComponent, NavbarComponent, DialogComponent,],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
@@ -56,6 +57,7 @@ import { NavbarComponent } from './navbar/navbar.component';
     MatTableModule,
     MatPaginatorModule,
     MatSortModule,
+    MatDialogModule
   ],
   providers: [],
   bootstrap: [AppComponent],

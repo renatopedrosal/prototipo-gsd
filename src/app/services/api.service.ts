@@ -9,10 +9,15 @@ export class ApiService {
   constructor(private http: HttpClient) { }
 
   postProfile(data: any){
-    return this.http.post<any>("http://localhost:3000/listProfile", data);
+    return this.http.post<any>("http://localhost:3000/listProfile/", data);
   }
-
   getProfile(){
-    return this.http.get<any>("http://localhost:3000/listProfile");
+    return this.http.get<any>("http://localhost:3000/listProfile/");
+  }
+  putProfile(data: any, id: number){
+    return this.http.put<any>("http://localhost:3000/listProfile/" + id, data);
+  }
+  deleteProfile(id: number){
+    return this.http.delete<any>("http://localhost:3000/listProfile/"+id);
   }
 }

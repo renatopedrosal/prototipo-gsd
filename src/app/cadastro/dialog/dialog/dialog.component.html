@@ -1,0 +1,17 @@
+<h1 mat-dialog-title>Add Product Form</h1>
+<div mat-dialog-content>
+  <form [formGroup]="profileForm">
+    <!-- <mat-form-field appearance="outline">
+      <mat-label>Id</mat-label>
+      <input matInput disabled placeholder="Id. Perfil">
+    </mat-form-field> -->
+    <mat-form-field appearance="outline">
+      <mat-label>Descrição</mat-label>
+      <input formControlName="descricao" matInput placeholder="Descrição">
+    </mat-form-field>
+  </form>
+</div>
+<div mat-dialog-actions [align]="'end'">
+  <button mat-raised-button color="warn" mat-dialog-close>Close</button>
+<button mat-raised-button color="primary" mat-dialog-close (click)="updateProfile()"> Salvar </button>
+<!--  -->

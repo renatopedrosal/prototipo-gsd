@@ -1,12 +1,28 @@
 {
   "listProfile": [
     {
-      "idPerfil": "1",
-      "descricao": "Diretor"
+      "descricao": "Diretor",
+      "id": 1
     },
     {
-      "idPerfil": "2",
-      "descricao": "Gerente"
+      "descricao": "Gerente",
+      "id": 2
+    },
+    {
+      "descricao": "Editor(a)",
+      "id": 3
+    },
+    {
+      "descricao": "Gerente Assistente",
+      "id": 4
+    },
+    {
+      "descricao": "Editor(a) Associado(a)",
+      "id": 5
+    },
+    {
+      "descricao": "Coordenador(a) Pedagógico(a)",
+      "id": 6
     }
   ],
   "comments": [
