@@ -1,7 +1,8 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { CadastroPerfilComponent } from './cadastro/cadastro-perfil/cadastro-perfil.component';
-import { IndexComponent } from './index/index.component';
+import { CadastroPerfilComponent } from './modules/cadastro/components/cadastro-perfil.component';
+import { IndexComponent } from './modules/index/components/index.component';
+
 
 export const routes: Routes = [
   { path: '', redirectTo: 'index', pathMatch: 'full' },

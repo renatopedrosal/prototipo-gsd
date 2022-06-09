@@ -19,15 +19,16 @@ import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppRoutingModule } from './app-routing-module';
 import { AppComponent } from './app.component';
-import { CadastroListEventosComponent } from './cadastro/cadastro-list-eventos/cadastro-list-eventos.component';
-import { CadastroPerfilComponent } from './cadastro/cadastro-perfil/cadastro-perfil.component';
-import { DialogComponent } from './cadastro/dialog/dialog/dialog.component';
-import { IndexComponent } from './index/index.component';
-import { AppRoutingTesteModule } from './navbar/app-routing-teste-module';
-import { NavbarComponent } from './navbar/navbar.component';
+import { DialogComponent } from './modules/dialog/components/dialog.component';
+import { IndexComponent } from './modules/index/components/index.component';
+import { AppRoutingTesteModule } from './modules/navbar/components/app-routing-teste-module';
+import { NavbarComponent } from './modules/navbar/components/navbar.component';
+
+
+
 
 @NgModule({
-  declarations: [AppComponent, IndexComponent, CadastroPerfilComponent, CadastroListEventosComponent, NavbarComponent, DialogComponent,],
+  declarations: [AppComponent, IndexComponent, NavbarComponent, DialogComponent,],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,

@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { CadastroPerfilComponent } from '../cadastro/cadastro-perfil/cadastro-perfil.component';
-import { IndexComponent } from '../index/index.component';
+import { CadastroPerfilComponent } from '../../cadastro/components/cadastro-perfil.component';
+import { IndexComponent } from '../../index/components/index.component';
 
 
 export const routes: Routes = [
