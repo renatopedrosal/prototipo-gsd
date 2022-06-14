@@ -1,0 +1,53 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+main {
+  height: 90%;
+  display: flex;
+  justify-content: center; //Alinhando componentes filhos ao centro
+  align-items: center;
+}
+
+.container-form {
+  max-width: 480px;
+  padding: 30px;
+  margin: 0 auto;
+}
+
+form {
+  // background-size: cover;
+  // background-position: 5%;
+  // background-image: url("./img/editora-cpb.png");
+
+  height: 18rem;
+  width: 25rem;
+  background-color: #fff;
+  border-color: transparent;
+  padding: 16px;
+  border-radius: 1rem;
+  box-shadow: 6px 10px 15px 2px rgba(0, 0, 0, 0.1);
+}
+
+.form-titulo {
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+}
+
+.mat-form-field {
+  width: 100%;
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.example-container .mat-form-field + .mat-form-field {
+  margin-left: 8px;
+}
+
+.example-button-row {
+  display: flex;
+  justify-content: flex-end;
+}
+
+// .mat-flat-button {
+//   // flex: 1; botão se expande para tamanho da div
+// }

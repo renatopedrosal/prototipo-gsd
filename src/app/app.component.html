@@ -1,4 +1,4 @@
-<!-- <mat-toolbar color="primary">
+<mat-toolbar color="primary" *ngIf="mostrarMenu">
   <div class="container-flex">
     <button mat-button [matMenuTriggerFor]="MenuHome">Home</button>
     <mat-menu #MenuHome="matMenu">
@@ -66,12 +66,12 @@
     </mat-menu>
     <button mat-button [matMenuTriggerFor]="MenuRelatorios">Relatório</button>
     <mat-menu #MenuRelatorios="matMenu">
-      <button mat-menu-item routerLink="index">
+      <button mat-menu-item routerLink="#">
         <mat-icon color="primary" class="mat-icon-style">content_paste</mat-icon
         >Relatórios
       </button>
     </mat-menu>
     <button mat-flat-button color="basic" routerLink="login">Sair</button>
   </div>
-</mat-toolbar> -->
+</mat-toolbar>
 <router-outlet></router-outlet>

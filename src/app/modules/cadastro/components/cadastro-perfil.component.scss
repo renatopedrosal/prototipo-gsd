@@ -24,10 +24,10 @@ mat-form-field {
 .parent {
   display: grid;
   grid-template-columns: 49% 49%;
-  grid-template-rows: 30% 70%;
+  // grid-template-rows: 30% 70%;
   grid-template-areas: "div1 div1" "div2 div3" ;
   grid-column-gap: 20px;
-  grid-row-gap: 0px;
+  // grid-row-gap: 20px;
   }
 
 .div1 { grid-area: div1; }

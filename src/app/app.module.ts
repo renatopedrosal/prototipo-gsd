@@ -1,17 +1,21 @@
 import { HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
+import { MatButtonModule } from '@angular/material/button';
+import { MatIconModule } from '@angular/material/icon';
+import { MatMenuModule } from '@angular/material/menu';
+import { MatToolbarModule } from '@angular/material/toolbar';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { AppRoutingModule } from './app.routing.module';
+import { AuthService } from './core/services/auth.service';
 import { ServiceModule } from './core/services/service.module';
 import { CadastroModule } from './modules/cadastro/cadastro.module';
 import { DialogModule } from './modules/dialog/dialog.module';
+import { HomeModule } from './modules/home/home.module';
+import { LoginModule } from './modules/login/login.module';
 import { NavbarModule } from './modules/navbar/navbar.module';
-
-
-
 
 @NgModule({
   declarations: [AppComponent],
@@ -23,10 +27,16 @@ import { NavbarModule } from './modules/navbar/navbar.module';
     CadastroModule,
     DialogModule,
     NavbarModule,
+    LoginModule,
+    HomeModule,
     FormsModule,
     HttpClientModule,
+    MatIconModule,
+    MatMenuModule,
+    MatToolbarModule,
+    MatButtonModule,
   ],
-  providers: [],
+  providers: [AuthService],
   bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

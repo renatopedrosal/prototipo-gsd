@@ -9,7 +9,7 @@ import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatTableModule } from '@angular/material/table';
 import { MatTabsModule } from '@angular/material/tabs';
 import { NavbarModule } from '../navbar/navbar.module';
-import { CadastroRoutingModule } from './cadastro-routing.module';
+import { CadastroPerfilRoutingModule } from './cadastro-routing.module';
 import { CadastroPerfilComponent } from './components/cadastro-perfil.component';
 
 
@@ -18,7 +18,7 @@ import { CadastroPerfilComponent } from './components/cadastro-perfil.component'
   declarations: [CadastroPerfilComponent],
   imports: [
     CommonModule,
-    CadastroRoutingModule,
+    CadastroPerfilRoutingModule,
     NavbarModule,
     ReactiveFormsModule,
     MatTableModule,
