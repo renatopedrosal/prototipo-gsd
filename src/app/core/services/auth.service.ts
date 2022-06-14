@@ -21,6 +21,7 @@ export class AuthService {
     } else {
       this.usuarioAutenticado = false;
       this.mostrarMenuEmitter.emit(false);
+      alert("Usuario não encontrado");
     }
   }
 

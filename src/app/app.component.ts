@@ -18,4 +18,8 @@ export class AppComponent implements OnInit {
       (mostrar) => (this.mostrarMenu = mostrar)
     );
   }
+
+  fazerLogoff() {
+    location.reload();
+  }
 }
