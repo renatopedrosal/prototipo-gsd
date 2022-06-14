@@ -9,6 +9,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app.routing.module';
+import { AuthGuard } from './core/guards/auth.guard';
 import { AuthService } from './core/services/auth.service';
 import { ServiceModule } from './core/services/service.module';
 import { CadastroModule } from './modules/cadastro/cadastro.module';
@@ -36,7 +37,7 @@ import { NavbarModule } from './modules/navbar/navbar.module';
     MatToolbarModule,
     MatButtonModule,
   ],
-  providers: [AuthService],
+  providers: [AuthService, AuthGuard],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
