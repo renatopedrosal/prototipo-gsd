@@ -98,7 +98,4 @@ export class CadastroPerfilComponent implements OnInit {
       this.dataSource.paginator.firstPage();
     }
   }
-
-
-
 }

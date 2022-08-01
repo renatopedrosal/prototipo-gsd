@@ -12,6 +12,7 @@ import { AppRoutingModule } from './app.routing.module';
 import { AuthGuard } from './core/guards/auth.guard';
 import { AuthService } from './core/services/auth.service';
 import { ServiceModule } from './core/services/service.module';
+import { CadastroEventosModule } from './modules/cadastro-eventos/cadastro-eventos.module';
 import { CadastroModule } from './modules/cadastro/cadastro.module';
 import { DialogModule } from './modules/dialog/dialog.module';
 import { HomeModule } from './modules/home/home.module';
@@ -26,6 +27,7 @@ import { NavbarModule } from './modules/navbar/navbar.module';
     AppRoutingModule,
     ServiceModule,
     CadastroModule,
+    CadastroEventosModule,
     DialogModule,
     NavbarModule,
     LoginModule,

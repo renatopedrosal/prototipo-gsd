@@ -1,0 +1,38 @@
+{
+  "listEvents": [
+    {
+      "id": 1 ,
+      "idEms": 0 ,
+      "descricao": "Medicamentos (com prescrição)" ,
+      "atividadeExterna": false ,
+      "atValorSemNota": false ,
+      "idGrupo": 59
+    },
+    {
+      "id": 2 ,
+      "idEms": 0 ,
+      "descricao": "Oculos Lentes" ,
+      "atividadeExterna": false ,
+      "atValorSemNota": false ,
+      "idGrupo": 0
+    },
+    {
+      "id": 4 ,
+      "idEms": 0 ,
+      "descricao": "Água" ,
+      "atividadeExterna": false ,
+      "atValorSemNota": false ,
+      "idGrupo": 35
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AuthGuard } from './core/guards/auth.guard';
+import { CadastroEventosComponent } from './modules/cadastro-eventos/components/cadastro-eventos.component';
 import { CadastroPerfilComponent } from './modules/cadastro/components/cadastro-perfil.component';
 import { HomeComponent } from './modules/home/components/home/home.component';
 import { IndexComponent } from './modules/index/components/index.component';
@@ -23,6 +24,10 @@ const routes: Routes = [
   { path: 'navbar',
     component: NavbarComponent,
     canActivate: [AuthGuard]
+   },
+   { path: 'eventos',
+     component: CadastroEventosComponent,
+     canActivate: [AuthGuard]
    },
 
   { path: 'login', component: LoginComponent},
