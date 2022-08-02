@@ -13,7 +13,7 @@ import { ApiService } from '../../../core/services/api.service';
 })
 export class CadastroEventosComponent implements OnInit{
 
-  displayedColumns: string[] = ['id', 'idEms', 'descricao', 'atividadeExterna', 'atValorSemNota', 'idGrupo'];
+  displayedColumns: string[] = ['id', 'idEms', 'descricao', 'atValorSemNota', 'atividadeExterna', 'idGrupo'];
   dataSource!: MatTableDataSource<any>;
   eventsForm!: FormGroup;
 
@@ -30,7 +30,9 @@ export class CadastroEventosComponent implements OnInit{
         id: ['', Validators.required],
         idEms: ['', Validators.required],
         descricao: ['', Validators.required],
-        atividadeExterna: ['', Validators.required]
+        atividadeExterna: ['', Validators.required],
+        atValorSemNota: ['', Validators.required],
+        idGrupo: ['', Validators.required]
       })
     }
 

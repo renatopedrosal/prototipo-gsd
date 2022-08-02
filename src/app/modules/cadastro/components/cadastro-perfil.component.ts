@@ -5,6 +5,7 @@ import { MatPaginator } from '@angular/material/paginator';
 import { MatSort } from '@angular/material/sort';
 import { MatTableDataSource } from '@angular/material/table';
 import { ApiService } from '../../../core/services/api.service';
+import { CadastroEventosModule } from '../../cadastro-eventos/cadastro-eventos.module';
 import { DialogComponent } from '../../dialog/components/dialog.component';
 
 @Component({
@@ -23,7 +24,8 @@ export class CadastroPerfilComponent implements OnInit {
 
   constructor(private formBuilder: FormBuilder,
     private dialog: MatDialog,
-    private api: ApiService) { }
+    private api: ApiService,
+    private eventos: CadastroEventosModule) { }
 
   ngOnInit(): void {
     this.getAllProfile();

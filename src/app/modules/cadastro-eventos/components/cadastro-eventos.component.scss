@@ -19,21 +19,6 @@ mat-form-field {
   margin: 15px;
 }
 
-// Colocando fieldset
-
-.parent {
-  display: grid;
-  grid-template-columns: 49% 49%;
-  // grid-template-rows: 30% 70%;
-  grid-template-areas: "div1 div1" "div2 div3" ;
-  grid-column-gap: 20px;
-  // grid-row-gap: 20px;
-  }
-
-.div1 { grid-area: div1; }
-.div2 { grid-area: div2; }
-.div3 { grid-area: div3; }
-
 h3 {
   font-size: 0.9em;
   margin: 0 0 5px 0;
@@ -59,12 +44,3 @@ th {
 .link-eventos:hover{
   background-color: #607d8b77;
 }
-// .mat-form-field {
-//   font-size: 14px;
-//   width: 100%;
-// }
-
-// .container {
-//   max-width: 1200px;
-//   margin: 0 auto;
-// }

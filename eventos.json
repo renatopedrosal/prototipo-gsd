@@ -11,9 +11,9 @@
     {
       "id": 2 ,
       "idEms": 0 ,
-      "descricao": "Oculos Lentes" ,
+      "descricao": "Óculos Lentes" ,
       "atividadeExterna": false ,
-      "atValorSemNota": false ,
+      "atValorSemNota": true ,
       "idGrupo": 0
     },
     {
