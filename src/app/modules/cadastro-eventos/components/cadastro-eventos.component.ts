@@ -13,6 +13,7 @@ import { ApiService } from '../../../core/services/api.service';
 })
 export class CadastroEventosComponent implements OnInit{
 
+  checked = false
   displayedColumns: string[] = ['id', 'idEms', 'descricao', 'atValorSemNota', 'atividadeExterna', 'idGrupo'];
   dataSource!: MatTableDataSource<any>;
   eventsForm!: FormGroup;

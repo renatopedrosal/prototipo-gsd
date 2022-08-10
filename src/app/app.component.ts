@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { AuthService } from './core/services/auth.service';
 
 @Component({
@@ -9,9 +10,9 @@ import { AuthService } from './core/services/auth.service';
 export class AppComponent implements OnInit {
   title = 'prototipo-gsd';
 
-  mostrarMenu: boolean = false;
+  mostrarMenu: boolean = true;
 
-  constructor(private authService: AuthService) {}
+  constructor(private authService: AuthService, private router: Router) { }
 
   ngOnInit() {
     this.authService.mostrarMenuEmitter.subscribe(
@@ -20,6 +21,8 @@ export class AppComponent implements OnInit {
   }
 
   fazerLogoff() {
-    location.reload();
+    this.router.navigate(['/login'])
+    this.mostrarMenu = false;
+    // location.reload();
   }
 }
